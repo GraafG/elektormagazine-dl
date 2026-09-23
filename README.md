@@ -56,7 +56,7 @@ A full download is approximately 27 GB (~11 GB English, ~16 GB Dutch).
 
 ## Requirements
 
-- **Node.js** v18 or higher — [nodejs.org](https://nodejs.org/)
+- **Node.js** v22.12.0 or higher (required by Puppeteer 25) — [nodejs.org](https://nodejs.org/)
 - **A Chromium-based browser** (one of the following):
   - Google Chrome
   - Microsoft Edge

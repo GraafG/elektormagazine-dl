@@ -13,7 +13,7 @@ Bedankt voor je interesse om bij te dragen!
 ## Richtlijnen
 
 - **Geen credentials** — Commit nooit wachtwoorden, tokens, of `.env` bestanden
-- **Test je wijzigingen** — Zorg dat het script werkt met je eigen account voordat je een PR opent
+- **Test je wijzigingen** — Draai `npm test` voordat je een PR opent. De offline tests vereisen geen account of browser.
 - **Houd het simpel** — Dit is een klein project, houd wijzigingen overzichtelijk
 - **Nederlands of Engels** — Beide talen zijn prima voor issues, PRs en comments
 
@@ -26,9 +26,16 @@ Bedankt voor je interesse om bij te dragen!
 
 ## Ontwikkelen
 
+Gebruik Node.js 22.12.0 of hoger. `npm test` controleert de echte Puppeteer-module
+en voert het script uit met een gesimuleerde browser en synthetische downloads.
+Dit test geen echte browser, website of accountlogin.
+
 ```bash
 # Installeer dependencies
 npm install
+
+# Draai de offline tests (geen .env nodig)
+npm test
 
 # Kopieer en vul je configuratie in
 cp .env.example .env
