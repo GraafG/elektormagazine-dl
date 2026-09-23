@@ -4,12 +4,16 @@
   "description": "Download Elektor Magazine edities als PDF voor offline gebruik",
   "main": "download.js",
   "scripts": {
-    "download": "node download.js"
+    "download": "node download.js",
+    "test": "node --test"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "type": "commonjs",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "dependencies": {
     "dotenv": "^17.4.2",
     "puppeteer-core": "^25.11.0"
